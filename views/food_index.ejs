@@ -20,29 +20,29 @@
   </head>
   <body>
     <nav>
-        <!-- <a href="/pokemon/new">Create New Pokemon</a> -->
+        
     </nav>
     <h1>GitPub index page</h1>
     
     <ul>
-      <% for(let i = 0; i < allDrinks.length; i++) { %>
+      <% for(let i = 0; i < allFood.length; i++) { %>
         <li>
-          <%= allDrinks[i].name %>
+          <%= allFood[i].name %>
         <br>
-        <a href="/drinks/<%=i%>">
-            <img src="<%= allDrinks[i].image%>">
+        <a href="/foods/<%=i%>">
+            <img src="<%= allFood[i].image%>">
             </a>
         
         <br>
-        $<%= allDrinks[i].price %>
+        $<%= allFood[i].price %>
 
         <br>
-        <a href="/drinks/<%=i%>">View Drink</a>
+        <a href="/foods/<%=i%>">View Food</a>
       </li>
       <% } %>
     </ul>
     <h4>
-        <a href="/foods">Click here to view FOOD</a>
+        <a href="/drinks">Click here to view Drinks</a>
     </h4>
   </body>
 </html>
